@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'omori';
+    src: url(/fonts/OMORI_NORMAL.ttf);
+    }
+
+body {
+  background-color: white;
+  color: black;
+  background-image: url('/blog/images/stardew_valley.jpg');
+  background-size: cover;
+  background-position: top;
+  font-family: 'omori', monospace;
+  font-size: 32px; /* Try 8px, 12px, or 16px for crisp pixel look */
+    }
+
+.blog-entry {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(90, 167, 255, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+}

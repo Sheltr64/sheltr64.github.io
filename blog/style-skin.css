@@ -1,0 +1,148 @@
+/***
+Style sheet based on Fake WP 2 Skin #2 by EGGRAMEN. To get it, visit:
+  https://eggramen.neocities.org/code/css/misc/fakewp2_skin2_mobcompat.css
+***/
+
+body {
+  background: #1f1f1f;
+  font-size: 0.875em;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: url(/bg/sitebg.png);
+  }
+
+a:hover {
+  color: orange;
+}
+a:active {
+  color: red;
+}
+a.footer-a:link {
+  color: paleturquoise;
+}
+a.footer-a:visited {
+  color: springgreen;
+}
+a.footer-a:hover {
+  color: orange;
+}
+a.footer-a:active {
+  color: red;
+}
+
+.wrapper {
+  background: none;
+  top: 0;
+  margin: 0 auto;
+  width: 870px;
+  }
+  
+.sidebar-left, .sidebar-right {
+  width: 175px;
+  }
+  
+.main {
+  width: 500px;
+  margin-left: 185px;
+  }
+  
+.sidebar-left {
+  margin-left: 0px;
+  }
+  
+.wrapper, .links a {
+  color: white;
+  }
+  
+.box {
+  border: 3px double #333;
+  background: #1f1f1f;
+  color: white;
+  padding: 0;
+  }
+  
+.header {
+  border: 3px double #333;
+  background: linear-gradient(rgb(127, 127, 127, 0.75), rgb(127, 127, 127, 0.75));
+  text-align: center;
+  margin-top: 15px;
+  top: 0;
+  height: auto;
+  }
+  
+.links {
+  margin-top: 1em;
+  }
+  
+.title { /*suppress title, since we're putting the title as text in the header box*/
+  display: none;
+  }
+
+.footer {
+  height: 0;
+  }
+  
+.box h2, .box h3 {
+  background: #dddddd;
+  color: black;
+  margin: 0;
+  padding: 0.35em 0.25em 0.3em 0.25em;
+  text-align: center;
+  border-bottom: 3px double #333;
+  }
+.box a:link {
+  color: paleturquoise;
+  }
+.box a:visited {
+  color: springgreen;
+  }
+.box a:hover {
+  color: orange;
+  }
+.box a:active {
+  color: red;
+  }
+  
+.inner {
+  padding: 0.25em 1em 0.3em 1em;
+  font-size: 1.075em;
+  }
+  
+  
+/* For narrow screens: slightly narrows sidebars, and makes the width
+ * of the main/center div flexible (sized relative to viewport width.)
+ */
+@media(max-width:880px) {
+  .wrapper {
+    width: calc(340px + 50vw);
+    }
+  .sidebar-left, .sidebar-right {
+    width: 160px;
+    }
+  .main {
+    width: 50vw;
+    margin-left: 170px;
+    }
+  }
+
+/*Mobile compatibility. Just turns it all into a vertical layout.*/  
+@media(orientation:portrait) {
+  .wrapper {
+    width: 96vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+  .wrapper-2 {
+    width: 94vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+  .sidebar-left, .main, .sidebar-right {
+    position: relative;
+    width: 92vw;
+    margin: 0.25rem 1vw;
+    }
+  }
