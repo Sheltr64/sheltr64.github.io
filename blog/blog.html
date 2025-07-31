@@ -53,5 +53,31 @@
     <p>I definitely need to pick up a drawing tablet. One  pen tablet (no screen) that I've been looking in to getting is the <a href="https://www.wacom.com/en-us/products/one-by-wacom">One</a> by Wacom, clocking in at around $40, I'm told that it strikes a good balance between quality and price, and preformance. Source: Reddit</p>
     <p>I estimate that when I pick up drawing I'll be making art at this caliber in around a week or two</p><img src="/blog/images/Mona_Lisa.jpg" height="300" alt="A picture of the Mona Lisa">
    </div>
+   <div class="blog-entry">
+    <h2>30/7/2025</h2>
+    <h3>I hate HP</h3>
+    <p>I spent last night looking up how to install <a href="https://www.linuxmint.com/">Linux Mint</a> on my friends PC, should be easy right? Set up <a href="https://www.ventoy.net/">Ventoy</a>, drag and drop the ISO to the USB stick, boot into it and we're in the clear, right? <b>WRONG</b> apparently his PC had a <a href="https://www.laptopmag.com/articles/intel-optane-memory-faq">Dell Optane</a>, Which for a TLDR is bascially this:</p>
+    <ul>
+      <li>Acts as controller for acting as a "Fake SSD" to make a normal spinning HDD speed up a little bit more (imagine a fast disk dedicated to being a page file)</li>
+      <li>It was used by OEMs in the late 2010's because of the high prices of normal SSDs</li>
+      <li>It quickly fell out of fasion when SSDs became cheaper</li>
+      <li>All the drivers are completely proprietary</li>
+    </ul>
+    <p>That last part is the most important and because of it, Mint was having a hard time understanding what it was working with, abruptly ending my installation process, telling me to disable <a href="https://en.wikipedia.org/wiki/RAID">RAID</a> which the PC doesn't have, so I asked my good friend ChatGPT, to save the day.</p>
+    <p>Here's a little life lession from me, don't use a LLM to help you solve a problem that doesn't have a clear issue</p>
+    <p>I went on this wild goose chase for several hours trying to diagnose my issue. Thinking the problem was RAID, I scoured the deepest depths of <i><b>shudder </i></b><span style="font-family: omori_spooky">REDDIT</span>; on there I went on this endless cycle of enabling and disabling security features on the PC. Safeboot, fastboot, virtualization support (I think I forgot to re-enable it on his PC, sorry), boot keys, and much much more. NOTHING.</p>
+    <p>In the end, it was this page that tipped my off that something <b>could</b> have been a hardware issue <img src="/blog/images/disk config.jpg" height="600"></p>
+    <p>The thing is, my USB stick was also a 16GB drive, so I assumed that the PC was simply picking up on that, not knowing that I just diagnosed the root cause. Yes I know it says NVME, but to play devils advocate here, I was simply being lazy.</p>
+    <br>
+    <div style="display: flex; align-items: center; gap: 15px;">
+    <img src="/blog/images/saul-goodman.gif" style="width: 200px; height: auto; border-radius: 6px;"><p style="margin: 0;text-indent: 0em;">live footage of me trying to get my brain to do something</p>
+    </div>
+    <p>In the end, I did end up opening up the PC, but I was amazed to what I saw: a CD drive. This came as a massive suprise as I had been wanting a way to rip my old CDs for a long time now. Digging a little bit deeper into the PC (and removing all the proprietary screws) I got to the NVME slot, removed the horrible disease that plagued the desktop, and put everything back together.</p>
+    <img src="/blog/images/Intel Optane.png">
+    <p>Here is a picture of the drive</p>
+    <h3>Was this worth is?</h3>
+    <p>Hard <b>YES</b>. Not only did Mint essentially breathe new life into his system, but I also got to rip a few of my discs (shoutout Sufjan Stevens)</p>
+    <p>Hopefully I can play more games with him without having his PC die in every game we try something new</p>
+   </div>
   </body>
 </html>
