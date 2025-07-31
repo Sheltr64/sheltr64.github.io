@@ -1,0 +1,17 @@
+{
+  "name": "sheltr64.github.io",
+  "version": "1.0.0",
+  "description": "Hey! This is a website is hosted courtesy of [Neocites](https://neocities.org/)\r I'm pretty new to this whole website stuff but help is always appreciated.",
+  "main": "index.js",
+  "scripts": {
+    "lint:html": "htmlhint --ignore node_modules '**/*.html'",
+    "test": "npm run lint:html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "htmlhint": "^1.6.3"
+  }
+}
