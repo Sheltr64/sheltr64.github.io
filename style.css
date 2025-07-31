@@ -19,7 +19,7 @@ body {
 .text-box {
   background: rgba(255, 255, 255, 0.3); /* semi-transparent white */
   border: 1px solid rgba(255, 255, 255, 0.5); /* light border */
-  border-radius: 25px;
+  border-radius: 25px; /* rounded corners */
   padding: 20px;
   width: 90%;
   max-width: 800px;
