@@ -2,6 +2,12 @@
     font-family: 'omori';
     src: url(/fonts/OMORI_NORMAL.ttf);
     }
+    
+@font-face {
+    font-family: 'omori_spooky';
+    src: url(/fonts/OMORI_SPOOKY.ttf);
+    }
+
 
 body {
   background-color: white;
