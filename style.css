@@ -51,14 +51,14 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1);
+
 }
 
 .collage img:hover {
   transform: scale(1.15);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease rotate(5deg);
 }
 
