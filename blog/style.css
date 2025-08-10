@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-position: top;
   font-family: 'omori', monospace;
-  font-size: 32px; /* Try 8px, 12px, or 16px for crisp pixel look */
+  font-size: 2em; /* Try 0.5em, 0.75em, or 1em for crisp pixel look */
     }
 
 .blog-entry {
