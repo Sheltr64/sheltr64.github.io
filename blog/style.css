@@ -52,3 +52,19 @@ p {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   
 }
+
+@keyframes rainbow {
+  0% { color: hsl(0, 100%, 50%); }
+  16% { color: hsl(60, 100%, 50%); }
+  33% { color: hsl(120, 100%, 50%); }
+  50% { color: hsl(180, 100%, 50%); }
+  66% { color: hsl(240, 100%, 50%); }
+  83% { color: hsl(300, 100%, 50%); }
+  100% { color: hsl(360, 100%, 50%); }
+}
+
+.rainbow-text {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: rainbow 3s infinite linear;
+}
