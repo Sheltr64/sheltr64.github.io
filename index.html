@@ -9,9 +9,15 @@
   <link rel="icon" href="/images/favicon.png">
 </head>
 <body>
+<!-- audio autoplay loop>
+  <source src="/audio/Sugar_Star_Planetarium.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio> -->
+<audio id="bg-music" autoplay></audio>
+<p id="now-playing"></p>
  <div class="text-box">
    <h1>Hey! Welcome to my first website!</h1>
-   <p>Have a look around 😀</p>
+   <p class="rainbow-text">Have a look around 😀</p>
  </div>
  <div class="text-box">
    <a href="https://music.youtube.com/playlist?list=PLbk3qd-zYj1XUIhXSImrolyRlng8Y83AP&si=PxubOiBNBBzyNha-">Songs in my rotation (YT Music)</a><br>
@@ -31,9 +37,6 @@
       <p><i>Made with love. (and chatGPT)</i></p>
     </div>
   </div>
-  <audio autoplay loop>
-    <source src="/audio/Sugar_Star_Planetarium.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio> 
+<script src="player.js"></script>
 </body>
 </html>
