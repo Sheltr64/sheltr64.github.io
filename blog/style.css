@@ -12,9 +12,12 @@
 body {
   background-color: white;
   color: black;
-  background-image: url('/blog/images/stardew_valley.jpg');
+  background-image: url('/blog/images/yume-nikki-dream-diary.gif');
+  background-position: right top;
+  background-attachment: fixed;
   background-size: cover;
-  background-position: top;
+  /*background-size: cover;
+  background-position: top; */
   font-family: 'omori', monospace;
   font-size: 3em; /* Try 0.5em, 0.75em, or 1em for crisp pixel look */
     }
